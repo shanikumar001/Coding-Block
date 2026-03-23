@@ -14,28 +14,28 @@ public class Main {
     }
 
     // Find Max value :
-    public static int findMax(int arr[]) {
-        int max = arr[0];
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > arr[0]) {
-                max = arr[i];
-            }
-            return max;
-        }
-        return max;
-    }
+    // public static int findMax(int arr[]) {
+    //     int max = arr[0];
+    //     for (int i = 0; i < arr.length; i++) {
+    //         if (arr[i] > arr[0]) {
+    //             max = arr[i];
+    //         }
+    //         return max;
+    //     }
+    //     return max;
+    // }
 
     // Find Min value :
-    public static int findMin(int arr[]) {
-        int min = arr[0];
-        for (int i = 1; i < arr.length; i++) {
-            if (arr[i] < arr[0]) {
-                min = arr[i];
-            }
-            return min;
-        }
-        return min;
-    }
+    // public static int findMin(int arr[]) {
+    //     int min = arr[0];
+    //     for (int i = 1; i < arr.length; i++) {
+    //         if (arr[i] < arr[0]) {
+    //             min = arr[i];
+    //         }
+    //         return min;
+    //     }
+    //     return min;
+    // }
 
     // Swipe two variable :
     public static void swipe(int a, int b) {

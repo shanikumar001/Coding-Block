@@ -12,6 +12,7 @@ public class peak {
         }
         int result=index(arr);
         System.out.println("result " +result);
+        sc.close();
 
     }
     static int index(int[] arr){

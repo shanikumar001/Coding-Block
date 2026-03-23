@@ -1,7 +1,5 @@
 package CodingWithRaviSir.lect18;
 
-import java.util.*;
-
 public class Main {
 
     // Reverse array (helper)

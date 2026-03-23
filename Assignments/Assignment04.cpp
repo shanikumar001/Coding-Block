@@ -5,12 +5,18 @@ using namespace std;
 // question 01 : 
 void inverse(int arr[], int n){
     // int arr[n];
-    for(int i = 0; i < n; i++){
-        arr[arr[i]] = i;
-    }
-    for(int i = 0; i < n; i++){
-        cout << i << " ";
-    }
+    // for(int i = 0; i < n; i++){
+    //     arr[arr[i]] = i;
+    // }
+    // using recursive :
+    int inv[n]; 
+    // void inverseArray(int arr[], int inv[], int i){
+    //     arr[arr[i]] = i;
+    //     inverseArray(arr, inv, i);
+    // }
+    // for(int i = 0; i < n; i++){
+    //     cout << i << " ";
+    // }
 }
 
 // QUestion 02 : 
@@ -125,9 +131,6 @@ void arraysReverse(){
         cout << arr[i] << " ";
     }
 }
-
-#include <iostream>
-using namespace std;
 
 void SquareAndSortArrray(){
     int n;
@@ -310,7 +313,7 @@ void sortingPatents(){
 			b++;
 		}
 	}
-     cout << r << w << b << endl;
+    cout << r << w << b << endl;
 	for(int i = 0; i < n; i++){
             if(i <= r-1){
                 arr[i] = 0;

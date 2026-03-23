@@ -19,6 +19,7 @@ public class productpeak {
             arr2[j]=product/arr[j];
         }
         System.out.println(Arrays.toString(arr2));
+        sc.close();
 
     }
     
