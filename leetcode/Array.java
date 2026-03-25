@@ -3,6 +3,60 @@ package leetcode;
 import java.util.Arrays;
 
 public class Array {
+    //01 : Two Sum : 
+    public static void twoSum(){
+        int arr[] = {2,7,11,15};
+        int target = 9;
+        int n = arr.length;
+        for(int i = 0; i < n ; i++){
+            for(int j = 0; j < n; j++){
+                int sum = arr[i] + arr[j];
+                if(sum == target){
+                    System.out.println(arr[i] + " " + arr[j]);
+                }
+            }
+        }
+    }
+    
+    // 26. Remove Duplicates from Sorted Array : 
+    public static void removeDuplicates(){
+        int arr[] = {0,0,1,1,1,2,2,3,3,4};
+        int n = arr.length;
+        int k = 1;
+        for(int i = 1; i < n; i++){
+            if(arr[i] != arr[i-1]){
+                arr[k] = arr[i];
+                k++;
+            }
+        }
+        System.out.println(k);
+        for(int i : arr){
+            System.out.print(i + " ");
+        }
+    }
+    
+    // 283. Moves Zeros : 
+    public static void moveZeroes() {
+    int arr[] = {0,0,1,0,3,12};
+    int n = arr.length;
+
+    int j = 0; // position for non-zero
+
+    for(int i = 0; i < n; i++){
+        if(arr[i] != 0){
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+            j++;
+        }
+    }
+
+    for(int a : arr){
+        System.out.print(a + " ");
+    }
+}
+
+
     // 1920 : Array from Permutation : 
     public int[] buildArray(int[] nums) {
         int i = 0;
@@ -167,10 +221,25 @@ public class Array {
         
     }
 
+    // Inverse Array : 
+    static void recursionInverse(int arr, int n){
+        
+    }
+    // public static void inverse(){
+    //     int arr[] = {0, 2, 4, 1, 3};
+    //     int n = arr.length;
+    //     int nums[] = new int[n];
+        
+
+    // }
+
     public static void main(String[] args) {
         // triplates();
         // System.out.println(trap());
         // rotateArrayByKtimes();
-        maxSum();
+        // maxSum();
+        // twoSum();
+        // removeDuplicates();
+        moveZeroes();
     }
 }
